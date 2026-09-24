@@ -410,10 +410,225 @@ marquee{
     padding: 40px;
     transition: 0.8s;
  }
+ .contact-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+
+/* LEFT SIDE */
+
+.contact-info {
+    width: 100%;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.section-title span {
+    width: 45px;
+    height: 3px;
+    background: #0866ff;
+    display: block;
+}
+
+.section-title p {
+    color: #0866ff;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-info h2 {
+    font-size: 55px;
+    line-height: 1.05;
+    color: #071a35;
+    margin: 0 0 30px;
+}
+
+.contact-info h2 strong {
+    color: #0866ff;
+}
+
+.contact-text {
+    color: #61708a;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 500px;
+    margin-bottom: 45px;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-icon {
+    width: 65px;
+    height: 65px;
+    background: #edf5ff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0866ff;
+    font-size: 24px;
+}
+
+.contact-item span {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.contact-item p {
+    color: #071a35;
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+
+/* SOCIAL ICONS */
+
+.contact-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.contact-socials a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #edf5ff;
+    color: #071a35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-socials a:hover {
+    background: #0866ff;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* FORM */
+
+.contact-form-container {
+    width: 100%;
+    padding: 45px;
+    border: 1px solid #e1ebf7;
+    border-radius: 20px;
+    /* box-shadow: 0 10px 35px rgba(20, 70, 120, 0.08); */
+    box-shadow: 0px 0px 6px black;
+    background: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    color: #071a35;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #d7e3f1;
+    border-radius: 10px;
+    padding: 16px 18px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #071a35;
+    outline: none;
+    margin-bottom: 25px;
+    background: white;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    border-color: #0866ff;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    border-radius: 10px;
+    background: #0866ff;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0052d6;
+}
+
+.contact-form button i {
+    margin-left: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        padding: 70px 25px;
+        gap: 50px;
+    }
+
+    .contact-info h2 {
+        font-size: 42px;
+    }
+
+    .contact-form-container {
+        padding: 30px 20px;
+    }
+
+}
  /****************
        TABLET 
   ****************/
- @media (max-width: 800px){
+ @media (max-width: 840px){
   .nav ul{
     display: flex;
     gap: 15px;
@@ -535,7 +750,7 @@ marquee{
   .box-img img{
     height: 70px;
   }
-}
+ }
 /******************
  ------MOBILE------
  ******************/
@@ -712,5 +927,55 @@ marquee{
     .box-img{
         display: flex;
         gap: 30px;
+    }
+}
+@media(max-width: 412px){
+    .header{
+        width: 100%;
+        display: flex;
+    }
+    .logo span{
+        font-size: 15px;
+    }
+    .nav ul{
+        display: flex;
+        gap: 15px;
+    }
+    .nav ul li{
+        font-size: 13px;
+    }
+    .page-one{
+        padding: 10px;
+    }
+    .first-element{
+        height: 50vh;
+        width: 100%;
+        border-radius: 47%;
+    }
+    .first-element h4{
+        font-size: 10px;
+        width: 80px;
+        height: 30px;
+    }
+    .first-element h1{
+        font-size: 25px;
+    }
+    .first-element p{
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .first-element button{
+        margin-bottom: 20px;
+    }
+    .flex-page div p{
+        font-size: 12px;
+    }
+    .my-services{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        justify-content: center;
+        margin-left: 9%;
+        margin-right: 9%;
+        padding: 0;
     }
 }
