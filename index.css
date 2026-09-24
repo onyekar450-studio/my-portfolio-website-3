@@ -939,7 +939,7 @@ marquee{
     }
     .nav ul{
         display: flex;
-        gap: 15px;
+        gap: 10px;
     }
     .nav ul li{
         font-size: 13px;
@@ -948,7 +948,7 @@ marquee{
         padding: 10px;
     }
     .first-element{
-        height: 50vh;
+        height: 40vh;
         width: 100%;
         border-radius: 47%;
     }
@@ -970,6 +970,9 @@ marquee{
     .flex-page div p{
         font-size: 12px;
     }
+    .icons{
+        margin-bottom: 20px;
+    }
     .my-services{
         margin-top: 30px;
         margin-bottom: 30px;
@@ -977,6 +980,9 @@ marquee{
         margin-left: 9%;
         margin-right: 9%;
         padding: 0;
+    }
+    .skills{
+        width: 100%;
     }
     .skill-box{
         width: 60px;
